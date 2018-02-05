@@ -2,16 +2,16 @@ const ejs = require('ejs');
 const fs = require('fs');
 const articles = [
   {
-    title: 'Scemo chi legge',
+    title: 'bella',
     image: 'http://tuttoin1.it/wp-content/uploads/2015/10/atomo-752x440.jpg',
-    text: 'Ancora più scemo chi continua a leggere',
-    lastUpdateDate: 'fra 2 ore'
+    text: 'dai dai dai dai',
+    lastUpdateDate: '3 ore'
   },
   {
-    title: 'Gay chi legge',
+    title: 'si volaaaaa',
     image: 'http://tuttoin1.it/wp-content/uploads/2015/10/atomo-752x440.jpg',
-    text: 'Ancora più gay chi continua a leggere',
-    lastUpdateDate: 'fra 2 ore'
+    text: 'ti scuoio...',
+    lastUpdateDate: '3 ore'
   }
 ];
 const html = ejs.render(fs.readFileSync('./index.html', { encoding: 'utf8' }), { articles: articles });
